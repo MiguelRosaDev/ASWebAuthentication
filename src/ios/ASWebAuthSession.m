@@ -36,7 +36,7 @@ ASWebAuthenticationSession *_authenticationVC;
                                    
         authenticationVC.presentationContextProvider = self;
         _authenticationVC = authenticationVC;
-        authenticationVC.prefersEphemeralWebBrowserSession = true;
+        _authenticationVC.prefersEphemeralWebBrowserSession = true;
         [authenticationVC start];
     }
 }
